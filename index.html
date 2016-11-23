@@ -52,13 +52,13 @@
 		</div>
 	</header>
 
-	<section class="top">
+	<section>
 		<div class="container white">
 			<div class="row content_1">
-				<div class="col s12 l8 m6 right">
+				<div class="col s12 l7 m6 right">
 					<img src="img/school_class.png" class="full_width">
 				</div>
-				<div class="col s12 l4 m6 light-blue-text text-darken-1 left">
+				<div class="col s12 l5 m6 light-blue-text text-darken-1 left">
 					<ul>
 						<li>
 							<p><strong>Giảm giá <span class="red-text text-lighten-1">10% </span>cho 20 bạn đăng ký đầu tiên</strong></p>
@@ -79,8 +79,56 @@
 					<a class="waves-effect waves-light btn-large red lighten-1">Đăng ký khóa học</a>
 				</div>
 			</div>
-			<div class="row content_2">
-				
+			<div class="content_2">
+				<div class="carousel">
+				    <a class="carousel-item" href="#one!"><img src="img/2016-11-23_160637.jpg"></a>
+				    <a class="carousel-item" href="#two!"><img src="img/2016-11-23_160704.jpg"></a>
+				    <a class="carousel-item" href="#three!"><img src="img/2016-11-23_160637.jpg"></a>
+				    <a class="carousel-item" href="#three!"><img src="img/2016-11-23_160704.jpg"></a>
+				    <a class="carousel-item" href="#four!"><img src="img/2016-11-23_160637.jpg"></a>
+				</div>
+			</div>
+			<div class="row content_3">
+				<div class="col m4 s12">
+					<img src="img/placard_woman_1smile.png" class="full_width">
+					<div class="text_box valign-wrapper">
+						<p class="valign center">Selling Point A1</p>
+					</div>
+				</div>	
+				<div class="col m4 s12">
+					<img src="img/placard_man_2angry.png" class="full_width">
+					<div class="text_box valign-wrapper">
+						<p class="valign center">Selling Point A1</p>
+					</div>
+				</div>	
+				<div class="col m4 s12">
+					<img src="img/placard_woman_4laugh.png" class="full_width">
+					<div class="text_box valign-wrapper">
+						<p class="valign center">Selling Point A1</p>
+					</div>
+				</div>	
+			</div>
+			<div class="row content_4">
+				<div class="col s12 m6">
+					<div class="row valign-wrapper">
+						<div class="col s3 img">
+							<img src="img/img.jpg" class="circle responsive-img">
+						</div>
+						<div class="col s9 text_box">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+						</div>
+					</div>
+			    </div>
+				<div class="col s12 m6">
+					<div class="row valign-wrapper">
+						<div class="col s3 img">
+							<img src="img/img.jpg" class="circle responsive-img">
+						</div>
+						<div class="col s9 text_box">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+						</div>
+					</div>
+			    </div>
 			</div>
 		</div>
 	</section>
@@ -93,6 +141,12 @@
 			    menuWidth: 300,
 			    edge: 'right',
 			});
+			$('.carousel').carousel({
+				dist:0,
+	            shift:0,
+	            padding:20,
+			});
+			$('.carousel').carousel('next');
 		})
 	</script>
 </body>
