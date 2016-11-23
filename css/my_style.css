@@ -1,8 +1,8 @@
-.text_white{
-	color: #ffffff;
-}
 .text-uppercase{
 	text-transform: uppercase;
+}
+.full_width{
+	width: 100%;
 }
 ul{
 	margin: 0;
@@ -77,4 +77,31 @@ header nav ul li:hover,header nav ul li.active,header nav ul li a:hover{
 }
 header nav ul li.active a,header nav ul li:hover a{
 	border-bottom: 3px solid #fff;
+}
+section{
+	background-image: url(../img/bg_natural_sougen.png);
+	min-height: 100vh;
+}
+section .content_1 {
+	padding: 30px 20px;
+}
+section .content_1 ul li {
+	list-style: initial;
+}
+section .content_1 ul {
+    font-size: 18px;
+    margin-top: 30px;
+}
+section .content_1 .left {
+    padding-left: 25px;
+}
+section .content_1 ul p{
+	color: #1A1A1A;
+}
+@media only screen and (max-width: 600px){
+	nav .brand-logo{
+		left: 0%;
+	    -webkit-transform: translateX(-0%);
+	    transform: translateX(-0%);
+	}
 }
