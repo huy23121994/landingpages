@@ -40,7 +40,7 @@ header nav{
 header .brand-logo .logo{
 	margin-top: 9px;
 }
-header .brand-logo .logo img{
+header .logo img{
 	padding: 2px;
     background-color: #fff;
 }
@@ -80,10 +80,10 @@ header nav ul.right_absolute li a{
 	display: inline;
     padding: 0 0 9px 0;
 }
-header nav ul li:hover,header nav ul li.active,header nav ul li a:hover{
+header nav ul.nav_desktop li:hover,header nav ul.nav_desktop li.active,header nav ul.nav_desktop li a:hover{
 	background-color : transparent;
 }
-header nav ul li.active a,header nav ul li:hover a{
+header nav ul.nav_desktop li.active a,header nav ul.nav_desktop li:hover a{
 	border-bottom: 3px solid #fff;
 }
 section{
@@ -116,11 +116,25 @@ section .content_1 ul p{
 section .content_2{
 	background-color: #EEEEEE;
     padding: 0 30px;
-    height: 320px;
+    height: 260px;
     overflow: hidden;
 }
 section>div.container{
     position: relative;
+}
+.carousel{
+	height: 300px;
+}
+.carousel .indicators .indicator-item{
+	height: 15px;
+    width: 15px;
+    background-color: #fff;
+}
+.carousel .indicators .indicator-item.active{
+	background-color: #2096f6;
+}
+.carousel .indicators{
+	bottom: 50px;
 }
 @media only screen and (max-width: 600px){
 	section .content_2{
@@ -136,6 +150,9 @@ section>div.container{
 	}
 	section,section .content_1{
 		top: 0;
+	}
+	.carousel .indicators {
+	    bottom: 10px;
 	}
 }
 @media only screen and (min-width: 601px){

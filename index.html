@@ -37,16 +37,24 @@
 						<div class="clearfix"></div>
 			      	</a>
 			      	<a href="#" data-activates="navigation" class="right_absolute button-collapse"><i class="material-icons">menu</i></a>
-			      	<ul class="right_absolute hide-on-med-and-down text-uppercase">
+			      	<ul class="nav_desktop right_absolute hide-on-med-and-down text-uppercase">
 				        <li class="active"><a href="">Tại sao DORA?</a></li>
 				        <li><a href="">Chia sẻ học viên</a></li>
 				        <li><a href="">Muôn màu tiếng Nhật</a></li>
 			      	</ul>
-			      	<ul class="side-nav" id="navigation">
-				        <li><a href="">Tại sao DORA?</a></li>
-				        <li><a href="">Chia sẻ học viên</a></li>
-				        <li><a href="">Muôn màu tiếng Nhật</a></li>
-			      	</ul>
+			      	<ul id="navigation" class="side-nav">
+					    <li><div class="userView">
+					      <div class="background">
+					        <img src="img/bg_natural_sougen.png">
+					      </div>
+					      <a href="#!user" class="logo"><img class="circle" src="img/school_class.png"></a>
+					      <a href="#!name"><span class="name"><u>John Doe</u></span></a>
+					      <a href="#!email"><span class="email"><u>jdandturk@gmail.com</u></span></a>
+					    </div></li>
+					    <li><a href="#!">Tại sao DORA?</a></li>
+					    <li><a href="#!">Chia sẻ học viên</a></li>
+					    <li><a href="#!">Muôn màu tiếng Nhật</a></li>
+					</ul>
 			    </div>
 			</nav>
 		</div>
@@ -80,7 +88,7 @@
 				</div>
 			</div>
 			<div class="content_2">
-				<div class="carousel">
+				<div class="carousel" data-indicators="true">
 				    <a class="carousel-item" href="#one!"><img src="img/2016-11-23_160637.jpg"></a>
 				    <a class="carousel-item" href="#two!"><img src="img/2016-11-23_160704.jpg"></a>
 				    <a class="carousel-item" href="#three!"><img src="img/2016-11-23_160637.jpg"></a>
@@ -178,12 +186,14 @@
 			$('.button-collapse').sideNav({
 			    menuWidth: 300,
 			    edge: 'right',
+			    draggable: true
 			});
 			$('.carousel').carousel({
 				dist:0,
 	            shift:0,
-	            padding:20,
+	            padding:50,
 			});
+			window.setInterval(function(){$('.carousel').carousel('next')},3000)
 			$(window).resize(function(){
 				remove_valign();
 			})
