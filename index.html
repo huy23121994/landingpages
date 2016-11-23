@@ -55,10 +55,10 @@
 	<section>
 		<div class="container white">
 			<div class="row content_1">
-				<div class="col s12 l7 m6 right">
+				<div class="col s12 m6 right">
 					<img src="img/school_class.png" class="full_width">
 				</div>
-				<div class="col s12 l5 m6 light-blue-text text-darken-1 left">
+				<div class="col s12 m6 light-blue-text text-darken-1 left">
 					<ul>
 						<li>
 							<p><strong>Giảm giá <span class="red-text text-lighten-1">10% </span>cho 20 bạn đăng ký đầu tiên</strong></p>
@@ -109,29 +109,67 @@
 				</div>	
 			</div>
 			<div class="row content_4">
+				<div class=" hide-on-small-only"></div>
 				<div class="col s12 m6">
 					<div class="row valign-wrapper">
-						<div class="col s3 img">
+						<div class="col s12 m4 img">
 							<img src="img/img.jpg" class="circle responsive-img">
 						</div>
-						<div class="col s9 text_box">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+						<div class="col s12 m8 text_box">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori</p>
+							<p class="light-blue-text text-darken-2"><strong>- Trần Bảo Huy</strong></p>
 						</div>
 					</div>
 			    </div>
 				<div class="col s12 m6">
 					<div class="row valign-wrapper">
-						<div class="col s3 img">
+						<div class="col s12 m4 img">
 							<img src="img/img.jpg" class="circle responsive-img">
 						</div>
-						<div class="col s9 text_box">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+						<div class="col s12 m8 text_box">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori</p>
+							<p class="light-blue-text text-darken-2"><strong>- Trần Bảo Huy</strong></p>
+						</div>
+					</div>
+			    </div>
+				<div class="col s12 m6">
+					<div class="row valign-wrapper">
+						<div class="col s12 m4 img">
+							<img src="img/img.jpg" class="circle responsive-img">
+						</div>
+						<div class="col s12 m8 text_box">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori</p>
+							<p class="light-blue-text text-darken-2"><strong>- Trần Bảo Huy</strong></p>
+						</div>
+					</div>
+			    </div>
+				<div class="col s12 m6">
+					<div class="row valign-wrapper">
+						<div class="col s12 m4 img">
+							<img src="img/img.jpg" class="circle responsive-img">
+						</div>
+						<div class="col s12 m8 text_box">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori</p>
+							<p class="light-blue-text text-darken-2"><strong>- Trần Bảo Huy</strong></p>
 						</div>
 					</div>
 			    </div>
 			</div>
 		</div>
 	</section>
+	<footer>
+		<div class="container">
+			<ul class="white-text">
+				<li><i class="tiny material-icons">phone</i> 0978 715 264</li>
+				<li><i class="tiny material-icons">email</i> tbhuy.contact@gmail.com</li>
+			</ul>
+		</div>
+	</footer>
+	<div id="bottom">
+		<div class="container">
+			<img src="img/hidarikiki.png" class="right" width="190">
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -146,8 +184,21 @@
 	            shift:0,
 	            padding:20,
 			});
-			$('.carousel').carousel('next');
+			$(window).resize(function(){
+				remove_valign();
+			})
+			remove_valign();
 		})
+		function remove_valign(){
+			var document_width = $(document).width();
+			var selector = $('.content_4 .valign-wrapper');
+			if (document_width <= 580) {
+				$('.content_4 .row.valign-wrapper').removeClass('valign-wrapper').addClass('center');
+			}else{
+				console.log('xx');
+				$('.content_4 .row.center').removeClass('center').addClass('valign-wrapper');
+			};
+		}
 	</script>
 </body>
 </html>

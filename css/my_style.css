@@ -88,15 +88,13 @@ header nav ul li.active a,header nav ul li:hover a{
 }
 section{
 	background-image: url(../img/bg_natural_sougen.png);
-	min-height: 100vh;
-	position: relative;
-	top: -110px;
+	background-size: cover;
 }
 section .content_1 {
 	padding: 30px 20px;
-	position: relative;
+	/*position: relative;*/
     z-index: 1;
-    top: 110px;
+    /*top: 110px;*/
 }
 section .content_1 ul li {
 	list-style: initial;
@@ -121,6 +119,9 @@ section .content_2{
     height: 320px;
     overflow: hidden;
 }
+section>div.container{
+    position: relative;
+}
 @media only screen and (max-width: 600px){
 	section .content_2{
 	    top: 0px;
@@ -137,12 +138,19 @@ section .content_2{
 		top: 0;
 	}
 }
+@media only screen and (min-width: 601px){
+	section>div.container{
+		padding-top: 386px;
+	}
+	section .content_1 {
+	    position: absolute;
+	    top: 0;
+	}
+}
 section .row.content_3 {
 	background-image: url(../img/bg_school_room.png);
 	background-size: cover;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
     padding-top: 80px;
 }
 section .content_3>div{
@@ -159,8 +167,40 @@ section .content_3 .text_box p{
 	width: 100%;
 }
 section .content_4>div>div.row{
-	padding: 0 20px;
+	padding: 20px 20px;
+    margin-bottom: 0;
+}
+section .content_4{
+	margin-bottom: 0;
 }
 section .content_4>div>div.row .text_box{
-	font-size: 13px;
+	font-size: 14px;
+    line-height: 18px;
+}
+section .content_4>div:first-child{
+	margin: 0 0.75rem;
+	width: calc(100% - 1.5rem);
+	height: 50px;
+	background-color: #EEEEEE;
+}
+footer{
+	background-color: #2096F6;
+}
+footer>div{
+    padding: 30px 20px;
+    line-height: 25px;
+}
+#bottom{
+	width: 100%;
+	background-color: #444444;
+	height: 50px;
+}
+#bottom>div{
+	height: 100%;
+	position: relative;
+}
+#bottom>div img{
+	bottom: 0;
+	right: 0;
+	position: absolute;
 }
