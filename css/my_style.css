@@ -19,6 +19,18 @@
 .mg_b_10{
 	margin-bottom: 10px; 
 }
+.mg_r_0{
+	margin-right: 0px; 
+}
+.mg_l_0{
+	margin-left: 0px; 
+}
+.mg_t_0{
+	margin-top: 0px; 
+}
+.mg_b_0{
+	margin-bottom: 0px; 
+}
 .pa_l_0{
 	padding-left: 0!important;
 }
@@ -298,11 +310,23 @@ footer>div{
     font-weight: bold;
 }
 .title_2{
-	font-size: 16px;
+	font-size: 15px;
     margin: 0;
     font-weight: bold;
 }
 .page_label_img{
 	height: 170px;
 	overflow: hidden;
+}
+.page_label_right_img{
+	position: relative;
+	margin-bottom: 110px;
+}
+.page_label_right_img img{
+	position: absolute;
+	top: -65px;
+    right: 0;
+}
+.pagination li.active{
+	background-color: #00897b;
 }
