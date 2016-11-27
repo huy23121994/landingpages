@@ -16,13 +16,13 @@
 				<li><i class="tiny material-icons">email</i> tbhuy.contact@gmail.com</li>
 			</ul>
 			<div class="right">
-				<a class="waves-effect waves-light btn hide-on-small-only red lighten-1">Đăng ký khóa học</a>
+				<a href="#modal1" class="waves-effect waves-light btn hide-on-small-only red lighten-1">Đăng ký khóa học</a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
 
-	<header>
+	<header id="header">
 		<div class="container white-text">
 			<nav>
 			    <div class="nav-wrapper">
@@ -60,6 +60,29 @@
 		</div>
 	</header>
 
+	<div id="modal1" class="modal white center">
+	    <div class="modal-content">
+	    	<h5 class="center title_1"><strong>Đăng ký để nhận phiếu giảm giá <span class="red-text text-lighten-1">10%</span></h5></strong>
+          	<input type="text" placeholder="Họ và tên">
+          	<input type="text" placeholder="Số điện thoại">
+          	<input type="text" placeholder="Email">
+          	<select class="browser-default">
+		      	<option value="" disabled selected>Chọn thời gian học</option>
+		      	<option value="1">Option 1</option>
+		      	<option value="2">Option 2</option>
+		      	<option value="3">Option 3</option>
+		    </select>
+		    <select class="browser-default">
+		      	<option value="" disabled selected>Khu vực bạn đang sống?</option>
+		      	<option value="1">Option 1</option>
+		      	<option value="2">Option 2</option>
+		      	<option value="3">Option 3</option>
+		    </select>
+		    <textarea rows="5" placeholder="Mong muốn của bạn khi tham gia khóa học"></textarea>
+		    <button class="modal-action waves-effect waves-light btn blue lighten-1">Đăng ký ngay</button>
+	    </div>
+	</div>
+
 	<section id="index_page">
 		<div class="container white">
 			<div class="row content_1">
@@ -84,7 +107,7 @@
 							<p><strong>Hoàn <span class="red-text text-lighten-1">100% </span>nếu cảm thấy không hữu ích</strong></p>
 						</li>
 					</ul>
-					<a class="waves-effect waves-light btn-large red lighten-1">Đăng ký khóa học</a>
+					<a href="#modal1" class="waves-effect waves-light btn-large red lighten-1">Đăng ký khóa học</a>
 				</div>
 			</div>
 			<div class="content_2">
@@ -181,6 +204,7 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script src="js/my_js.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.button-collapse').sideNav({

@@ -4,6 +4,9 @@
 .full_width{
 	width: 100%;
 }
+.block{
+	display: block;
+}
 .full_height{
 	height: 100%;
 }
@@ -20,16 +23,16 @@
 	margin-bottom: 10px; 
 }
 .mg_r_0{
-	margin-right: 0px; 
+	margin-right: 0px!important; 
 }
 .mg_l_0{
-	margin-left: 0px; 
+	margin-left: 0px!important; 
 }
 .mg_t_0{
-	margin-top: 0px; 
+	margin-top: 0px!important; 
 }
 .mg_b_0{
-	margin-bottom: 0px; 
+	margin-bottom: 0px!important; 
 }
 .pa_l_0{
 	padding-left: 0!important;
@@ -140,9 +143,6 @@ section{
 }
 section .content_1 {
 	padding: 30px 20px;
-	/*position: relative;*/
-    z-index: 1;
-    /*top: 110px;*/
 }
 section .content_1 ul li {
 	list-style: initial;
@@ -207,12 +207,13 @@ section>div.container{
 	}
 }
 @media only screen and (min-width: 601px){
-	#index_page section>div.container{
-		padding-top: 386px;
+	#index_page>div.container{
+		/*padding-top: 386px;*/
 	}
 	section .content_1 {
-	    position: absolute;
-	    top: 0;
+	    /*position: absolute;
+	    top: 0;*/
+	    padding-bottom: 0;
 	}
 }
 section .row.content_3 {
@@ -306,7 +307,6 @@ footer>div{
 }
 .title_1{
 	font-size: 20px;
-    margin: 0;
     font-weight: bold;
 }
 .title_2{
@@ -328,5 +328,36 @@ footer>div{
     right: 0;
 }
 .pagination li.active{
-	background-color: #00897b;
+	background-color: #2096f6;
+}
+.top_fixed{
+	position: fixed;
+    z-index: 998;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 9px 0px #434343;
+}
+.modal input,.modal select,.modal textarea{
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 80%;
+    margin-bottom: 12px;
+    box-shadow: none;
+}
+.modal textarea{
+	outline: none;
+    height: initial;
+}
+.modal select{
+	margin-left: auto;
+	margin-right: auto;
+}
+.modal input[type=text]:focus:not([readonly]){
+	box-shadow: none;
+	border-color: #ddd;
+}
+.modal{
+	max-height: none;
 }
