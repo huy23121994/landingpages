@@ -47,9 +47,11 @@ $(document).ready(function(){
 		if (top >= 50) {
 			$('#header').addClass('top_fixed');
 			$('body>section').css('margin-top','80px');
+			$('.img_fixed').fadeIn();
 		}else{
 			$('#header').removeClass('top_fixed');
 			$('body>section').css('margin-top','0');
+			$('.img_fixed').fadeOut();
 		}
 	}
 
