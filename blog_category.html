@@ -61,26 +61,37 @@
 		</div>
 	</header>
 
-	<div id="modal1" class="modal white center">
+	<div id="modal1" class="modal modal-fixed-footer white center">
 	    <div class="modal-content">
 	    	<h5 class="center title_1"><strong>Đăng ký để nhận phiếu giảm giá <span class="red-text text-lighten-1">10%</span></h5></strong>
-          	<input type="text" placeholder="Họ và tên">
-          	<input type="text" placeholder="Số điện thoại">
-          	<input type="text" placeholder="Email">
-          	<select class="browser-default">
-		      	<option value="" disabled selected>Chọn thời gian học</option>
-		      	<option value="1">Option 1</option>
-		      	<option value="2">Option 2</option>
-		      	<option value="3">Option 3</option>
-		    </select>
-		    <select class="browser-default">
-		      	<option value="" disabled selected>Khu vực bạn đang sống?</option>
-		      	<option value="1">Option 1</option>
-		      	<option value="2">Option 2</option>
-		      	<option value="3">Option 3</option>
-		    </select>
-		    <textarea rows="5" placeholder="Mong muốn của bạn khi tham gia khóa học"></textarea>
-		    <button class="modal-action waves-effect waves-light btn blue lighten-1">Đăng ký ngay</button>
+          	<div class="form_field">
+	          	<input type="text" placeholder="Họ và tên" class="error">
+	          	<p class="left-align red-text text-lighten-2 error_message">This field is required</p>
+          	</div>
+          	<div class="form_field"><input type="text" placeholder="Số điện thoại"></div>
+          	<div class="form_field"><input type="text" placeholder="Email"></div>
+          	<div class="form_field">
+          		<select class="browser-default">
+			      	<option value="" disabled selected>Chọn thời gian học</option>
+			      	<option value="1">Option 1</option>
+			      	<option value="2">Option 2</option>
+			      	<option value="3">Option 3</option>
+			    </select>
+		    </div>
+		    <div class="form_field">
+		    	<select class="browser-default">
+			      	<option value="" disabled selected>Khu vực bạn đang sống?</option>
+			      	<option value="1">Option 1</option>
+			      	<option value="2">Option 2</option>
+			      	<option value="3">Option 3</option>
+			    </select>
+		    </div>
+		    <div class="form_field">
+		    	<textarea rows="9" placeholder="Mong muốn của bạn khi tham gia khóa học"></textarea>
+	    	</div>
+	    </div>
+	    <div class="modal-footer white">
+	      	<button class="modal-action waves-effect waves-light btn blue lighten-1">Đăng ký ngay</button>
 	    </div>
 	</div>
 
