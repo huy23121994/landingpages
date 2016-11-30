@@ -205,6 +205,9 @@ section>div.container{
 	#blog_main .page_label h3{
 	    font-size: 16px!important;
 	}
+	.img_fixed{
+		width: 100px;
+	}
 }
 @media only screen and (min-width: 601px){
 	#index_page>div.container{
@@ -373,4 +376,11 @@ footer>div{
 }
 .modal{
 	max-height: none;
+}
+.img_fixed{
+	display: none;
+    position: fixed;
+    left: 25px;
+    bottom: 40px;
+    z-index: 1;
 }
