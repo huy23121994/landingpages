@@ -63,22 +63,31 @@
 	<div id="modal1" class="modal white center">
 	    <div class="modal-content">
 	    	<h5 class="center title_1"><strong>Đăng ký để nhận phiếu giảm giá <span class="red-text text-lighten-1">10%</span></h5></strong>
-          	<input type="text" placeholder="Họ và tên">
-          	<input type="text" placeholder="Số điện thoại">
-          	<input type="text" placeholder="Email">
-          	<select class="browser-default">
-		      	<option value="" disabled selected>Chọn thời gian học</option>
-		      	<option value="1">Option 1</option>
-		      	<option value="2">Option 2</option>
-		      	<option value="3">Option 3</option>
-		    </select>
-		    <select class="browser-default">
-		      	<option value="" disabled selected>Khu vực bạn đang sống?</option>
-		      	<option value="1">Option 1</option>
-		      	<option value="2">Option 2</option>
-		      	<option value="3">Option 3</option>
-		    </select>
-		    <textarea rows="5" placeholder="Mong muốn của bạn khi tham gia khóa học"></textarea>
+          	<div class="form_field">
+	          	<input type="text" placeholder="Họ và tên" class="error">
+	          	<p class="left-align red-text text-lighten-2 error_message">This field is required</p>
+          	</div>
+          	<div class="form_field"><input type="text" placeholder="Số điện thoại"></div>
+          	<div class="form_field"><input type="text" placeholder="Email"></div>
+          	<div class="form_field">
+          		<select class="browser-default">
+			      	<option value="" disabled selected>Chọn thời gian học</option>
+			      	<option value="1">Option 1</option>
+			      	<option value="2">Option 2</option>
+			      	<option value="3">Option 3</option>
+			    </select>
+		    </div>
+		    <div class="form_field">
+		    	<select class="browser-default">
+			      	<option value="" disabled selected>Khu vực bạn đang sống?</option>
+			      	<option value="1">Option 1</option>
+			      	<option value="2">Option 2</option>
+			      	<option value="3">Option 3</option>
+			    </select>
+		    </div>
+		    <div class="form_field">
+		    	<textarea rows="5" placeholder="Mong muốn của bạn khi tham gia khóa học"></textarea>
+	    	</div>
 		    <button class="modal-action waves-effect waves-light btn blue lighten-1">Đăng ký ngay</button>
 	    </div>
 	</div>
@@ -86,10 +95,10 @@
 	<section id="index_page">
 		<div class="container white">
 			<div class="row content_1">
-				<div class="col s12 m6 right">
+				<div class="col s12 m6 l7 right">
 					<img src="img/school_class.png" class="full_width">
 				</div>
-				<div class="col s12 m6 light-blue-text text-darken-1 left">
+				<div class="col s12 m6 l5 light-blue-text text-darken-1 left">
 					<ul>
 						<li>
 							<p><strong>Giảm giá <span class="red-text text-lighten-1">10% </span>cho 20 bạn đăng ký đầu tiên</strong></p>

@@ -337,14 +337,27 @@ footer>div{
     width: 100%;
     box-shadow: 0px 1px 9px 0px #434343;
 }
+.form_field{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+.form_field .error{
+	border-color: #E57373;
+}
+.form_field .error_message{
+	margin-top: 3px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
 .modal input,.modal select,.modal textarea{
 	border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 0 10px;
-    width: 80%;
     margin-bottom: 12px;
     box-shadow: none;
+    margin-bottom: 0;
 }
 .modal textarea{
 	outline: none;

@@ -34,7 +34,6 @@ $(document).ready(function(){
 		if (document_width <= 580) {
 			$('.content_4 .row.valign-wrapper').removeClass('valign-wrapper').addClass('center');
 		}else{
-			console.log('xx');
 			$('.content_4 .row.center').removeClass('center').addClass('valign-wrapper');
 		};
 	}
@@ -47,8 +46,10 @@ $(document).ready(function(){
 	function setFixedHeader(top){
 		if (top >= 50) {
 			$('#header').addClass('top_fixed');
+			$('body>section').css('margin-top','80px');
 		}else{
 			$('#header').removeClass('top_fixed');
+			$('body>section').css('margin-top','0');
 		}
 	}
 
